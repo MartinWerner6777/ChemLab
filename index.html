@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -523,8 +524,13 @@ html,body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:
     <div class="hud-logo-ico">C</div>
     <span>Chem<span>Lab</span></span>
   </div>
-  <div id="hud-back" style="display:none;align-items:center;gap:6px;padding:5px 12px;background:var(--bg3);border:0.5px solid var(--bdr2);border-radius:8px;cursor:pointer;font-size:12.5px;color:var(--t2);margin-left:4px;transition:all .15s" onclick="zoomHome()" onmouseover="this.style.background='var(--bg4)'" onmouseout="this.style.background='var(--bg3)'">
-    🏠 Startseite
+  <div id="hud-back" style="display:none;align-items:center;gap:6px;margin-left:6px">
+    <div onclick="history.back()" title="Zurück" style="display:flex;align-items:center;gap:4px;padding:5px 10px;background:var(--bg3);border:0.5px solid var(--bdr2);border-radius:8px;cursor:pointer;font-size:12.5px;color:var(--t2);transition:all .15s" onmouseover="this.style.background='var(--bg4)'" onmouseout="this.style.background='var(--bg3)'">
+      ← Zurück
+    </div>
+    <div onclick="zoomHome()" title="Startseite" style="display:flex;align-items:center;gap:4px;padding:5px 10px;background:var(--bg3);border:0.5px solid var(--bdr2);border-radius:8px;cursor:pointer;font-size:12.5px;color:var(--t2);transition:all .15s" onmouseover="this.style.background='var(--bg4)'" onmouseout="this.style.background='var(--bg3)'">
+      🏠 Startseite
+    </div>
   </div>
   <div class="hud-breadcrumb" id="breadcrumb" style="display:none">
     <span class="sep">›</span>
